@@ -3,6 +3,7 @@
   "description": "OpenList SDK.",
   "author": "amatsuka <amatsukamao@qq.com>",
   "version": "0.1.0",
+  "license": "MIT",
   "exports": {
     ".": {
       "import": "./dist/index.js"
@@ -16,7 +17,7 @@
     "LICENSE"
   ],
   "engines": {
-    "node": ">=20.0.0"
+    "node": ">=18.0.0"
   },
   "packageManager": "pnpm@10.16.1",
   "type": "module",
