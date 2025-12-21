@@ -1,0 +1,76 @@
+import type * as BuildSearchIndex from "./build-search-index.js";
+import type * as CancelUser2fa from "./cancel-user-2fa.js";
+import type * as ClearSearchIndex from "./clear-search-index.js";
+import type * as ClearUserCache from "./clear-user-cache.js";
+import type * as CreateMeta from "./create-meta.js";
+import type * as CreateStorage from "./create-storage.js";
+import type * as CreateUser from "./create-user.js";
+import type * as DeleteMeta from "./delete-meta.js";
+import type * as DeleteSetting from "./delete-setting.js";
+import type * as DeleteStorage from "./delete-storage.js";
+import type * as DeleteUser from "./delete-user.js";
+import type * as DeleteUserSshKey from "./delete-user-ssh-key.js";
+import type * as DisableStorage from "./disable-storage.js";
+import type * as EnableStorage from "./enable-storage.js";
+import type * as GetDriverInfo from "./get-driver-info.js";
+import type * as GetDriverNames from "./get-driver-names.js";
+import type * as GetIndexingProgress from "./get-indexing-progress.js";
+import type * as GetMeta from "./get-meta.js";
+import type * as GetSetting from "./get-setting.js";
+import type * as GetStorage from "./get-storage.js";
+import type * as GetUser from "./get-user.js";
+import type * as ListDrivers from "./list-drivers.js";
+import type * as ListMetas from "./list-metas.js";
+import type * as ListSettings from "./list-settings.js";
+import type * as ListStorages from "./list-storages.js";
+import type * as ListUsers from "./list-users.js";
+import type * as ListUserSshKeys from "./list-user-ssh-keys.js";
+import type * as ReloadAllStorages from "./reload-all-storages.js";
+import type * as ResetApiToken from "./reset-api-token.js";
+import type * as SaveSettings from "./save-settings.js";
+import type * as StopIndexing from "./stop-indexing.js";
+import type * as UpdateMeta from "./update-meta.js";
+import type * as UpdateSearchIndex from "./update-search-index.js";
+import type * as UpdateStorage from "./update-storage.js";
+import type * as UpdateUser from "./update-user.js";
+
+export default interface AdminEndpoints {
+  BuildSearchIndex: [BuildSearchIndex.Request, BuildSearchIndex.Response];
+  CancelUser2fa: [CancelUser2fa.Request, CancelUser2fa.Response];
+  ClearSearchIndex: [ClearSearchIndex.Request, ClearSearchIndex.Response];
+  ClearUserCache: [ClearUserCache.Request, ClearUserCache.Response];
+  CreateMeta: [CreateMeta.Request, CreateMeta.Response];
+  CreateStorage: [CreateStorage.Request, CreateStorage.Response];
+  CreateUser: [CreateUser.Request, CreateUser.Response];
+  DeleteMeta: [DeleteMeta.Request, DeleteMeta.Response];
+  DeleteSetting: [DeleteSetting.Request, DeleteSetting.Response];
+  DeleteStorage: [DeleteStorage.Request, DeleteStorage.Response];
+  DeleteUser: [DeleteUser.Request, DeleteUser.Response];
+  DeleteUserSshKey: [DeleteUserSshKey.Request, DeleteUserSshKey.Response];
+  DisableStorage: [DisableStorage.Request, DisableStorage.Response];
+  EnableStorage: [EnableStorage.Request, EnableStorage.Response];
+  GetDriverInfo: [GetDriverInfo.Request, GetDriverInfo.Response];
+  GetDriverNames: [GetDriverNames.Request, GetDriverNames.Response];
+  GetIndexingProgress: [
+    GetIndexingProgress.Request,
+    GetIndexingProgress.Response,
+  ];
+  GetMeta: [GetMeta.Request, GetMeta.Response];
+  GetSetting: [GetSetting.Request, GetSetting.Response];
+  GetStorage: [GetStorage.Request, GetStorage.Response];
+  GetUser: [GetUser.Request, GetUser.Response];
+  ListDrivers: [ListDrivers.Request, ListDrivers.Response];
+  ListMetas: [ListMetas.Request, ListMetas.Response];
+  ListSettings: [ListSettings.Request, ListSettings.Response];
+  ListStorages: [ListStorages.Request, ListStorages.Response];
+  ListUsers: [ListUsers.Request, ListUsers.Response];
+  ListUserSshKeys: [ListUserSshKeys.Request, ListUserSshKeys.Response];
+  ReloadAllStorages: [ReloadAllStorages.Request, ReloadAllStorages.Response];
+  ResetApiToken: [ResetApiToken.Request, ResetApiToken.Response];
+  SaveSettings: [SaveSettings.Request, SaveSettings.Response];
+  StopIndexing: [StopIndexing.Request, StopIndexing.Response];
+  UpdateMeta: [UpdateMeta.Request, UpdateMeta.Response];
+  UpdateSearchIndex: [UpdateSearchIndex.Request, UpdateSearchIndex.Response];
+  UpdateStorage: [UpdateStorage.Request, UpdateStorage.Response];
+  UpdateUser: [UpdateUser.Request, UpdateUser.Response];
+}

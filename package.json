@@ -1,0 +1,49 @@
+{
+  "name": "openlist-sdk",
+  "description": "OpenList SDK.",
+  "author": "amatsuka <amatsukamao@qq.com>",
+  "version": "0.1.0",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "packageManager": "pnpm@10.16.1",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "lint": "eslint --ext .ts,.js src",
+    "prettier": "prettier --write 'src/**/*.ts'",
+    "build": "tsup",
+    "build:production": "cross-env NODE_ENV=production tsup",
+    "prepublishOnly": "pnpm run prettier && pnpm run build:production",
+    "test": "tsx tests/index.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.3",
+    "@typescript-eslint/eslint-plugin": "^8.50.0",
+    "@typescript-eslint/parser": "^8.50.0",
+    "cross-env": "^10.1.0",
+    "eslint": "^9.39.2",
+    "eslint-config-prettier": "^10.1.8",
+    "prettier": "^3.7.4",
+    "tsup": "^8.5.1",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "ky": "^1.14.1"
+  }
+}
