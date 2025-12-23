@@ -6,5 +6,6 @@ export interface Request {
   force_root?: boolean;
 }
 
-export interface Response
-  extends ApiResponse<Array<{ name?: string; path?: string }>> {}
+export interface Response extends ApiResponse<
+  Array<{ name?: string; path?: string }>
+> {}

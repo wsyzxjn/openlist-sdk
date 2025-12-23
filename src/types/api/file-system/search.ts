@@ -8,8 +8,7 @@ export interface Request {
   per_page?: number;
 }
 
-export interface Response
-  extends ApiResponse<{
-    content?: FsObject[];
-    total?: number;
-  }> {}
+export interface Response extends ApiResponse<{
+  content?: FsObject[];
+  total?: number;
+}> {}

@@ -5,8 +5,7 @@ export interface Request {
   archive_path?: string;
 }
 
-export interface Response
-  extends ApiResponse<{
-    content?: FsObject[];
-    total?: number;
-  }> {}
+export interface Response extends ApiResponse<{
+  content?: FsObject[];
+  total?: number;
+}> {}
